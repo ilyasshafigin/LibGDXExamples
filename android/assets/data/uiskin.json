@@ -1,0 +1,31 @@
+{
+  	resources: {
+  		com.badlogic.gdx.graphics.Color: {
+  			black: { r: 0, g: 0, b: 0, a: 1 }
+  			white: { r: 1, g: 1, b: 1, a: 1 }
+  		},
+  		com.badlogic.gdx.graphics.g2d.BitmapFont: {
+  			default-font: { file: default.fnt }
+  		}
+  	},
+  	styles: {
+  	    com.badlogic.gdx.graphics.g2d.NinePatch: {
+  	        default-nine : [
+               	{
+               	    width: 100,
+               	    height: 100,
+               	    x: 0,
+               	    y: 0
+               	}
+            ]
+        }
+
+  		com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+  			default: {
+  				font: default-font,
+  				fontColor: black,
+  				selectedPatch: default-nine
+  			}
+  		}
+  	}
+}
